@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to top, #3b5998, #8b9dc3);
+  background-image: url("background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+  width: 300px;
+}
+
+.login-box,
+.register-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  width: 500px;
+}
+
+.login-box h2,
+.register-box h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: white;
+  font-size: 1em;
+}
+
+.input-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  color: white;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 0.75em;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+}
+
+.options a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: #03a9f4;
+  border: none;
+  width: 90%;
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #039be5;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+p a {
+  color: #03a9f4;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+#login-box {
+  display: block;
+}
